@@ -1,6 +1,6 @@
 # data_DFT-thermodynamical-study-of-xenon-clathrate
 
-Data from article
+Data from the article: "DFT Investigation of Xenon Clathrate Hydrates: thermodynamic properties and structural insights"
 
 Here are some informations on what each folder contains.
 
