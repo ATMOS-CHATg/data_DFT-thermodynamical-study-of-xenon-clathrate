@@ -1,6 +1,6 @@
 # data_DFT-thermodynamical-study-of-xenon-clathrate
 
-data from paper
+Data from article
 
 Here are some informations on what each folder contains.
 
@@ -17,4 +17,4 @@ Evolution of the unit cell parameter with pressure for fully occupied xenon clat
 
 Thermal expansion and bulk modulus:
 
-Contains data and scripts for analyzing the thermal expansion and bulk modulus of xenon clathrate hydrate. It includes: thermal expansion data from two reference articles, QHA data used for our calculations, and the Python script. Using these files, one can generate plots of the thermal expansion coefficient  as a function of temperature and the bulk modulus B as a function of temperature for different pressures.
+Contains data and scripts for analyzing the thermal expansion and bulk modulus of xenon clathrate hydrate. It includes: thermal expansion data from two reference articles, QHA data used for our calculations, and the Python script. Using these files, one can generate plots of the thermal expansion coefficient as a function of temperature and the bulk modulus B as a function of temperature for different pressures.
