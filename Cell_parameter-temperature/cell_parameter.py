@@ -47,7 +47,7 @@ temp_sim,a_sim= np.loadtxt(f"{script_dir}/exp_simu.txt", skiprows=1, unpack=True
 temp_exp2,a_exp2 = np.loadtxt(f"{script_dir}/ikeda_values.txt", skiprows=1, unpack=True)
 temp_vdw,a_vdw=np.loadtxt(f"{script_dir}/vdWDF2/volume-temperature_81.dat", unpack=True)
 temp_rev, a_rev = np.loadtxt(f"{script_dir}/revPBE/volume-temperature_81.dat", unpack=True)
-
+a_reverr = np.loadtxt(f"{script_dir}/revPBE/volume-temperature_err.dat", unpack=True)
 
 # Plot data
 fig, ax = plt.subplots()
@@ -56,6 +56,7 @@ line2=ax.plot(temp_exp2, a_exp2, color='r', marker='H', linestyle='--', label='I
 line3=ax.plot(temp_sim, a_sim, color='k', marker='D', linestyle='-.', label='Lattice dynamics [2]')
 line4=ax.plot(temp_vdw, a_vdw, color='g', marker='s', linestyle='-', label='vdWDF2')
 line5=ax.plot(temp_rev, a_rev, color='purple', marker='v', linestyle='-', label='revPBE-D3(0)')
+ax.fill_between(temp_rev,a_rev - a_reverr,a_rev + a_reverr,color='purple',alpha=0.15)
 
 ax.set_xlabel('Temperature (K)', fontweight='bold')
 ax.set_ylabel('Unit cell parameter (Å)', fontweight='bold')
